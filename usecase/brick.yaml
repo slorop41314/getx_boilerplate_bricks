@@ -21,8 +21,13 @@ environment:
 #  * an optional prompt phrase used when asking for the variable
 #  * a list of values (enums only)
 vars:
-  name:
+  sub_directory:
     type: string
-    description: Your name
-    default: Dash
-    prompt: What is your name?
+    description: sub_directory name
+    default: default
+    prompt: sub_directory name?
+  usecase:
+    type: string
+    description: usecase name
+    default: default
+    prompt: usecase name?
