@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:getx_boilerplate/core/network/api_provider.dart';
 
 abstract class {{repository_name.pascalCase()}}RemoteDataSource {
   // TODO: change method name

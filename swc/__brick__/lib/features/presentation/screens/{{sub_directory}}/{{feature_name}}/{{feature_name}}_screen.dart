@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_boilerplate/features/presentation/components/shared/shared.dart';
 
 import './index.dart';
 
