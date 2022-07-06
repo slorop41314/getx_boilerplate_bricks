@@ -7,7 +7,9 @@ class {{feature_name.pascalCase()}}Controller extends GetxController {
     required this.{{feature_name.camelCase()}}UseCase,
   });
 
-  RxBool isLoading = false.obs;
+  RxBool _isLoading = RxBool(false);
+
+  bool get isLoading => _isLoading.value;
 
   @override
   void onInit() {
@@ -20,12 +22,12 @@ class {{feature_name.pascalCase()}}Controller extends GetxController {
   }
 
   Future<void> get{{feature_name.pascalCase()}}Data() async {
-    isLoading(true);
+    _isLoading(true);
     try {
       final result = await {{feature_name.camelCase()}}UseCase.execute();
     }catch(err){
       //
     }
-    isLoading(false);
+    _isLoading(false);
   }
 }
