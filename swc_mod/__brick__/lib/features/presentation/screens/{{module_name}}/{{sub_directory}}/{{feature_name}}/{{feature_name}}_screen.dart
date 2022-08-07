@@ -19,13 +19,7 @@ class {{feature_name.pascalCase()}}Page extends GetView<{{feature_name.pascalCas
       appBar: CustomAppBar(
         "Header",
       ),
-      body: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
-            child: const SizedBox(),
-          )
-        ],
-      ),
+      body: const SizedBox(),
     );
   }
 }
