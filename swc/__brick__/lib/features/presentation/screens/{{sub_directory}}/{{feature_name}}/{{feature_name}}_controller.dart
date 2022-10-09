@@ -8,7 +8,6 @@ class {{feature_name.pascalCase()}}Controller extends GetxController {
   });
 
   RxBool _isLoading = RxBool(false);
-
   bool get isLoading => _isLoading.value;
 
   @override
